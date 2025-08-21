@@ -14,7 +14,7 @@ source dev-container-features-test-lib
 LATEST_KUBEBUILDER_VERSION=$(curl -s https://api.github.com/repos/kubernetes-sigs/kubebuilder/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
 
 # Check if kubebuilder is installed and the version matches the latest release
-check "execute command" kubebuilder version | grep -q "${LATEST_KUBEBUILDER_VERSION#v}""
+check "execute command" kubebuilder version | grep -q "${LATEST_KUBEBUILDER_VERSION#v}"
 
 # Report results
 # If any of the checks above exited with a non-zero exit code, the test will fail.

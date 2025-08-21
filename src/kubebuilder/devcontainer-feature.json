@@ -11,10 +11,12 @@
         }
     },
     "dependsOn": {
-        "ghcr.io/bartventer/arch-devcontainer-features/go:1": {}
+        "ghcr.io/devcontainers-extra/features/curl-apt-get:1": {},
+        "ghcr.io/devcontainers/features/go:1": {}
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers-extra/features/curl-apt-get:1.0.18",
         "ghcr.io/devcontainers/features/go"
     ]
 }
