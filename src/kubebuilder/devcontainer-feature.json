@@ -1,0 +1,21 @@
+{
+    "name": "kubebuilder",
+    "id": "kubebuilder",
+    "version": "1.0.0",
+    "description": "A feature to install kubebuilder",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "description": "Choose the version of kubebuilder, see https://github.com/kubernetes-sigs/kubebuilder/releases/."
+        }
+    },
+    "dependsOn": {
+        "ghcr.io/bartventer/arch-devcontainer-features/go:1": {}
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/go"
+    ]
+}
+
