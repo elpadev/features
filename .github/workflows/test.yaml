@@ -33,8 +33,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - kubebuilder
     steps:
       - uses: actions/checkout@v4
 
