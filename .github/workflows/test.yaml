@@ -15,9 +15,6 @@ jobs:
         features:
           - kubebuilder
         baseImage:
-          - debian:latest
-          - ubuntu:latest
-          - mcr.microsoft.com/devcontainers/base:ubuntu
           - mcr.microsoft.com/devcontainers/go:1.23
     steps:
       - uses: actions/checkout@v4
