@@ -24,6 +24,12 @@ jobs:
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
 
+      - name: "Install latest go version"
+        run: "sudo apt update && sudo apt install golang -y"
+
+      - name: "Install latest cURL version"
+        run: "sudo apt update && sudo apt install curl -y"
+
       - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
         run: devcontainer features test --skip-scenarios -f ${{ matrix.features }} -i ${{ matrix.baseImage }} .
 
@@ -57,6 +63,12 @@ jobs:
 
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
+
+      - name: "Install latest go version"
+        run: "sudo apt update && sudo apt install golang -y"
+
+      - name: "Install latest cURL version"
+        run: "sudo apt update && sudo apt install curl -y"
 
       - name: "Testing global scenarios"
         run: devcontainer features test --global-scenarios-only .
