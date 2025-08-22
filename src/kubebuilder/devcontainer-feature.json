@@ -10,10 +10,6 @@
             "description": "Choose the version of kubebuilder, see https://github.com/kubernetes-sigs/kubebuilder/releases/."
         }
     },
-    "dependsOn": {
-        "ghcr.io/devcontainers-extra/features/curl-apt-get:1": {},
-        "ghcr.io/devcontainers/features/go:1": {}
-    },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils",
         "ghcr.io/devcontainers-extra/features/curl-apt-get:1.0.18",
