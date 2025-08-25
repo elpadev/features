@@ -26,7 +26,7 @@ This feature installs [Kubebuilder](https://github.com/kubernetes-sigs/kubebuild
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
         "ghcr.io/elpadev/features/kubebuilder:1": {
-            "version": "3.12.0"
+            "version": "v3.12.0"
         }
     }
 }
